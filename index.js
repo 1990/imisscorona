@@ -14,7 +14,7 @@ app.use(helmet())
 app.use(compression())
 app.disable("x-powered-by")
 
-app.set("views", path.join(process.cwd(), "/views"))
+app.set("views", path.join(process.cwd()))
 app.set("view engine", "html")
 app.engine("html", ejs.__express)
 
