@@ -8,13 +8,13 @@ import ejs from "ejs"
 const app = express()
 let server = null
 
-app.use("/public", express.static(path.join(path.resolve(), "/website/public")))
-app.use(favicon(path.join(process.cwd(), "/website/public/favicons/favicon.ico")))
+app.use("/public", express.static(path.join(path.resolve(), "/public")))
+app.use(favicon(path.join(process.cwd(), "/public/favicons/favicon.ico")))
 app.use(helmet())
 app.use(compression())
 app.disable("x-powered-by")
 
-app.set("views", path.join(process.cwd(), "/website/views"))
+app.set("views", path.join(process.cwd(), "/views"))
 app.set("view engine", "html")
 app.engine("html", ejs.__express)
 

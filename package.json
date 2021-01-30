@@ -1,8 +1,12 @@
 {
-  "name": "bearicorn-website",
+  "name": "imisscorona",
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "scripts": {
+    "test": "DEBUG=eslint:cli-engine ./node_modules/.bin/eslint ./interface ./cloud ./website",
+    "start": "nodemon --trace-warnings index.js"
+  },
   "dependencies": {
     "compression": "1.7.4",
     "ejs": "3.1.5",
