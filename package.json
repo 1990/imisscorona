@@ -1,0 +1,13 @@
+{
+  "name": "bearicorn-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "compression": "1.7.4",
+    "ejs": "3.1.5",
+    "express": "4.17.1",
+    "helmet": "4.4.1",
+    "serve-favicon": "2.5.0"
+  }
+}
